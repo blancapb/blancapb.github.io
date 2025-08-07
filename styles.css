@@ -1,3 +1,5 @@
+/* HOME AND GENERAL */
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -15,7 +17,8 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
 nav ul li a {
@@ -25,8 +28,19 @@ nav ul li a {
 }
 
 main {
-  padding: 2rem;
+  padding: 3rem;
 }
+
+footer {
+  background: #fff;
+  padding: 1rem;
+  text-align: left;
+  color: darkgrey;
+  border-top: 1px solid #ccc;
+}
+
+
+
 
 /* ABOUT ME */
 /* Description*/
@@ -42,7 +56,7 @@ body {
   background-color: #f9f9f9;
   color: #222;
   line-height: 1.6;
-  padding: 20px;
+  padding: 0px;
 }
 
 main#about-me {
