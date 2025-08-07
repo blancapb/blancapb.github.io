@@ -1,4 +1,4 @@
-/* HOME AND GENERAL */
+/* GENERAL  */
 
 body {
   font-family: sans-serif;
@@ -39,12 +39,25 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+.btn {
+  display: inline-block;
+  background-color: #78b3ef;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius:8px;
+  transition: background-color 0.3s ease;
+}
+
+/* HOME */
+#hello-home {
+  text-align: center;
+}
 
 
 
 /* ABOUT ME */
-/* Description*/
-/* Reset some default styles */
 * {
   box-sizing: border-box;
   margin: 0;
