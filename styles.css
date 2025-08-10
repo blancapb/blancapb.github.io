@@ -14,8 +14,9 @@ nav {
   border-bottom: 1px solid #ccc;
 }
 
-#logo {
-  font-family:'Courier New', Courier, monospace;
+#say-hi {
+  float: right;
+  
 }
 
 nav ul {
