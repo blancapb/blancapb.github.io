@@ -1,3 +1,13 @@
+/* GRAPHIC PROFILE
+LIGHT BLUE
+color: #A3C6F5;
+
+DEEP PURPLE
+color: #4F377B;
+
+LIGHT PINK
+color: #FFE5F8; */
+
 /* GENERAL  */
 
 body {
@@ -6,30 +16,6 @@ body {
   padding: 0;
   background: #f9f9f9;
   color: #333;
-}
-
-nav {
-  background: #fff;
-  padding: 1rem;
-  border-bottom: 1px solid #ccc;
-}
-
-#say-hi {
-  float: right;
-  
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
 }
 
 main {
@@ -44,6 +30,8 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+
+/* BUTTONS */
 .btn {
   display: inline-block;
   background-color: #78b3ef;
@@ -54,6 +42,47 @@ footer {
   border-radius:8px;
   transition: background-color 0.3s ease;
 }
+.btn:hover {
+  background-color: #5a9cd8;
+}
+
+
+/* NAVIGATION */
+nav {
+  background: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#say-hi {
+  display: inline-block;
+  background-color: #A3C6F5;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
 
 /* HOME */
 #hello-home {
@@ -77,14 +106,6 @@ body {
   padding: 0px;
 }
 
-main#about-me {
-  max-width: 700px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
 
 /* Profile + Bio */
 #profile-bio {
