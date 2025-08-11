@@ -1,3 +1,19 @@
+/* Hamburger Navigation */
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navUl = document.querySelector('nav ul');
+  if (navToggle && navUl) {
+    navToggle.addEventListener('click', function() {
+      navUl.classList.toggle('open');
+    });
+  }
+});
+
+
+/* Contact Form Submission */
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contactForm');
   const messageDiv = document.getElementById('form-message');
