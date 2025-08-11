@@ -11,13 +11,25 @@ color: #FFE5F8; */
 /* GENERAL  */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
   color: #222;
   line-height: 1.6;
   height: 100%;
+}
+
+h1 {
+  font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 main {
@@ -203,11 +215,7 @@ nav ul li a:hover {
   box-shadow: 0 0 8px rgba(0,115,230,0.4);
 }
 
-  .bio h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    color: #0047ab;
-  }
+
 
 .bio p {
   font-size: 1.1rem;
@@ -336,12 +344,8 @@ nav ul li a:hover {
 
 .contact-header h1 {
   color: #fff;
-  font-size: 2.5rem;
-  font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
   z-index: 2;
-  letter-spacing: 1px;
-  font-weight: 700;
   text-shadow: 0 2px 16px rgba(0,0,0,0.25);
   padding: 0 20px;
 }
@@ -365,14 +369,25 @@ nav ul li a:hover {
 
 #get-in-touch {
   flex: 1;
-  max-width: 600px;
-  text-align: left;
+  max-width: 700px;
+  text-align: center;
+}
+
+#get-in-touch p {
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 #get-in-touch .btn {
-  margin-bottom: 15px;
   width: 250px;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+#get-in-touch .btn[href^="mailto:"] {
+  width: 350px;
+  text-align: center;
+  justify-content: center;
 }
 
 .social-logo {
@@ -383,22 +398,24 @@ nav ul li a:hover {
 }
 
 
+
+
 /* Contact Form */
 
 #contact-form {
   flex: 1;
-  max-width: 340px;
+  max-width: 500px;
   background: #fff;
   padding: 32px 28px;
-  border-radius: 18px;
+  border-radius: 10px;
   box-shadow: 0 4px 24px rgba(163,198,245,0.15);
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   border: 1px solid #e6eaf3;
 }
 
 #contact-form h2 {
   color: #000000;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
