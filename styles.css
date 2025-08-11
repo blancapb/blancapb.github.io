@@ -1,4 +1,6 @@
 /* GRAPHIC PROFILE
+background: #f9f9f9;
+
 LIGHT BLUE
 color: #A3C6F5;
 
@@ -6,7 +8,13 @@ DEEP PURPLE
 color: #4F377B;
 
 LIGHT PINK
-color: #FFE5F8; */
+color: #FFE5F8; 
+
+HEADINGS : Lucida Sans Unicode
+SUBHEADINGS: Lucida Sans Unicode
+BODY: Gill Sans
+
+*/
 
 /* GENERAL  */
 
@@ -358,6 +366,12 @@ nav ul li a:hover {
   z-index: 1;
 }
 
+#contact-img {
+  border-radius: 150px;
+  width: 200px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
 
 /* Contact Page Flex Layout */
 .contact-flex {
@@ -374,14 +388,14 @@ nav ul li a:hover {
 }
 
 #get-in-touch p {
-  margin-bottom: 30px;
-  margin-top: 0;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 #get-in-touch .btn {
   width: 250px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #get-in-touch .btn[href^="mailto:"] {
