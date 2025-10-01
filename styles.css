@@ -41,7 +41,10 @@ p {
 }
 
 main {
-  padding: 0rem;
+  padding: 2rem 1.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 footer {
@@ -198,134 +201,84 @@ nav ul li a:hover {
 
 
 /* ABOUT ME */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 
-
-/* Profile + Bio */
-#profile-bio {
+/* About Top Flex */
+.about-top-flex {
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-bottom: 30px;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
-
-.profile-pic {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #0073e6;
-  box-shadow: 0 0 8px rgba(0,115,230,0.4);
+.about-info {
+  flex: 1;
+  min-width: 250px;
 }
-
-
-
-.bio p {
-  font-size: 1.1rem;
-  max-width: 500px;
-  color: #333;
-}
-
-/* Contact Buttons */
-#contact-buttons {
+.about-image {
+  flex: 1;
   display: flex;
-  gap: 20px;
   justify-content: center;
+}
+.profile-pic-rect {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 0 8px rgba(0,115,230,0.15);
+}
+
+/* About Columns Flex */
+.about-columns-flex {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.about-col {
+  flex: 1;
+  min-width: 220px;
+}
+.about-col h2 {
+  color: #4F377B;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.about-col ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.tools-box {
+  background: rgb(255, 229, 248); /* light pink */
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
+}
+
+.love-box {
+  background: rgb(79, 55, 123); /* deep purple */
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
+}
+
+.love-box h2, .love-box ul {
+  color: #fff;
+}
+
+/* Work Philosophy */
+.about-philosophy {
   margin-bottom: 40px;
 }
-
-#contact-buttons .btn {
-  background-color: #0073e6;
-  color: white;
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  min-width: 120px;
+.about-philosophy h2 {
+  color: #4F377B;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
 }
-
-#contact-buttons .btn:hover {
-  background-color: #005bb5;
-}
-
-/* Hobbies & Goals */
-#hobbies-goals {
-  margin-bottom: 40px;
-}
-
-#hobbies-goals h2 {
-  color: #0047ab;
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-#hobbies-goals ul {
-  list-style: inside disc;
-  font-size: 1.1rem;
-  color: #333;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-/* Skills Section */
-#skills {
-  margin-bottom: 40px;
-}
-
-#skills h2,
-#skills h3 {
-  color: #0047ab;
-}
-
-#skills h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-#skills h3 {
-  font-size: 1.4rem;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  border-left: 4px solid #0073e6;
-  padding-left: 10px;
-}
-
-#skills ul {
-  list-style: disc;
-  padding-left: 40px;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-/* How I Work With Others */
-#work-style {
-  margin-bottom: 30px;
-  padding: 0 15px;
-}
-
-#work-style h2 {
-  color: #0047ab;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-#work-style p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.5;
-  text-align: center;
+.about-philosophy p {
+  max-width: 700px;
 }
 
 
@@ -567,5 +520,19 @@ nav ul li a:hover {
   .name-row  {
     flex-direction: column;
     gap: 2;
+  }
+}
+
+
+/* About me */
+@media (max-width: 800px) {
+  .about-top-flex,
+  .about-columns-flex {
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+  }
+  .about-image {
+    justify-content: flex-start;
   }
 }
