@@ -14,6 +14,8 @@ HEADINGS : Lucida Sans Unicode
 SUBHEADINGS: Lucida Sans Unicode
 BODY: Gill Sans
 
+Rounded edges: 8, 10 or 25px
+
 */
 
 /* GENERAL  */
@@ -49,7 +51,9 @@ main {
 
 footer {
   background: #fff;
-  padding: 1rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 1rem;
   text-align: left;
   color: darkgrey;
   border-top: 1px solid #ccc;
@@ -271,14 +275,19 @@ nav ul li a:hover {
 /* Work Philosophy */
 .about-philosophy {
   margin-bottom: 40px;
+  text-align: center;
 }
 .about-philosophy h2 {
   color: #4F377B;
   font-size: 1.3rem;
   margin-bottom: 12px;
+  text-align: center;
 }
 .about-philosophy p {
   max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 
@@ -321,7 +330,7 @@ nav ul li a:hover {
 
 #contact-img {
   border-radius: 150px;
-  width: 200px;
+  width: 270px;
   margin-top: 18px;
   margin-bottom: 18px;
 }
@@ -396,7 +405,7 @@ nav ul li a:hover {
 
 #contact-form label {
   color: #4F377B;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.2px;
 }
 
@@ -444,7 +453,8 @@ nav ul li a:hover {
   cursor: pointer;
   transition: background 0.3s;
   box-shadow: 0 2px 8px rgba(163,198,245,0.10);
-  margin-top: 8px;
+  margin-top: 30px;
+  margin-bottom: -10px;
 }
 
 #contact-form button:hover {
