@@ -44,19 +44,37 @@ p {
 
 main {
   padding: 2rem 1.5rem;
-  max-width: 1500px;
+  max-width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 footer {
   background: #fff;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 1rem;
-  text-align: left;
+  padding: 1rem;
   color: darkgrey;
   border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 0;
+  vertical-align: middle;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  margin-right: 12px; /* space to the right edge */
+}
+
+footer a img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-left: 0;
 }
 
 html {
@@ -201,7 +219,25 @@ nav ul li a:hover {
 
 /* PORTFOLIO */
 
+.cv-btn {
+  position: absolute;
+  top: 8rem;
+  right: 2.5rem;
+  background-color: #4F377B;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+  z-index: 10;
+}
 
+.cv-btn:hover {
+  background-color: #A3C6F5;
+  color: #4F377B;
+}
 
 
 /* ABOUT ME */
@@ -210,27 +246,26 @@ nav ul li a:hover {
 /* About Top Flex */
 .about-top-flex {
   display: flex;
-  align-items: center;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 10px;
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
 .about-info {
   flex: 1;
-  min-width: 250px;
+  min-width: 500px;
 }
 .about-image {
   flex: 1;
+  height: 350px;
   display: flex;
   justify-content: center;
+  margin-left: -100px;
+  margin-right: -200px;
 }
-.profile-pic-rect {
-  width: 220px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 24px;
-  box-shadow: 0 0 8px rgba(0,115,230,0.15);
-}
+
+
+
 
 /* About Columns Flex */
 .about-columns-flex {
@@ -329,9 +364,8 @@ nav ul li a:hover {
 }
 
 #contact-img {
-  border-radius: 150px;
-  width: 270px;
-  margin-top: 18px;
+  width: 150px;
+  margin-top: 0px;
   margin-bottom: 18px;
 }
 
@@ -469,7 +503,7 @@ nav ul li a:hover {
 
 
 /* RESPONSIVITY */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   /* NAVIGATION */
   nav {
@@ -535,14 +569,33 @@ nav ul li a:hover {
 
 
 /* About me */
-@media (max-width: 800px) {
-  .about-top-flex,
-  .about-columns-flex {
+@media (max-width: 700px) {
+  .about-top-flex {
     flex-direction: column;
-    gap: 24px;
-    align-items: stretch;
+    gap: 12px;
   }
   .about-image {
-    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .about-info {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+/* Portfolio */
+@media (max-width: 700px) {
+  .cv-btn {
+    position: static;
+    display: block;
+    margin: 1rem auto 0 auto;
+    width: fit-content;
   }
 }
