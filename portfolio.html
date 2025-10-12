@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
 </head>
-<body>
+<body class="portfolio-page">
   <nav>
     <a href="index.html" class="brand-logo">Blanca Prymka Brenner</a>
     <button class="nav-toggle" aria-label="Open navigation">
@@ -23,49 +23,81 @@
 
   <main>
 <a href="files/BlancaPrymkaBrenner-CV.pdf" class="btn cv-btn" download>Download my CV</a>
-  <section id="portfolio-intro">
+  <section id="portfolio-main">
 
     <section id="portfolio-intro">
-      <h1>My Work</h1>
+      <h1>Portfolio</h1>
       <p>Here are some of the projects I've worked on! Click on one to read more 😊</p>
+    </section>
 
-    <section id="project1">
-      <h2>Big Band Survivors</h2>
-      <h3>Community management & marketing</h3>
-      <p>Short intro</p>
-      <br>
-      <button class="btn">Show more</button>
-      <!-- Add a script here to expand more content below --> <!-- style="display: none;" -->
-      <div class="more-content">
-         <p>Big Band Survivors is </p>
-         <button class="btn">Steam</button>
-         <button class="btn">Discord</button>
-        <button class="btn">TikTok</button>
-        <h3>What I did</h3>
-
-        - Managed the community on Discord and Steam
-
-        <h3>Growth</h3>
-        <h3>Social media samples</h3>
-      
-       <button class="btn" style="display: none;">Show less</button>
+<div class="portfolio-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <a href="portfolio-projects/bbs.html">
+          <img src="images/GH-sample-summer.png" alt="Big Band Survivors" class="project-img">
+        </a>
+        <h2>Big Band Survivors</h2>
+        <h4>Moontrail Games</h4>
+        <h3>Community management & marketing</h3>
+        <p>Indie game studio project: managed Discord & Steam communities, created content, and coordinated marketing efforts.</p>
+        <a class="btn" href="portfolio-projects/bbs.html">Read more</a>
       </div>
-       
+      
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <a href="portfolio-projects/gh.html">
+          <img src="images/GH-sample-summer.png" alt="Gästrike-Hälsinge nation" class="project-img">
+        </a>
+        <h2>Gästrike-Hälsinge nation</h2>
+        <h4>Student-run organization</h4>
+        <h3>Social media marketing & leadership</h3>
+        <p>Led communications team, developed social media campaigns, and managed event promotion for a student nation.</p>
+        <a class="btn" href="portfolio-projects/.html">Read more</a>
+      </div>
 
-    </section>
+<!-- Project Card 3 -->
+      <div class="project-card">
+        <a href="portfolio-projects/umv.html">
+          <img src="images/umv-thumb.jpg" alt="Uppsala Medievetare" class="project-img">
+        </a>
+        <h2>Uppsala Medievetare</h2>
+        <h4>Student-run organization</h4>
+        <h3>Graphic design & social media marketing</h3>
+        <p>Designed content for social media together with a team</p>
+        <a class="btn" href="portfolio-projects/.html">Read more</a>
+      </div>
 
-    <br>
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <a href="portfolio-projects/volunteering.html">
+          <img src="images/volunteering-thumb.jpg" alt="Volunteering" class="project-img">
+        </a>
+        <h2>Volunteering</h2>
+        <h4>Various events</h4>
+        <h3>Community engagement</h3>
+        <p>Organized events, managed social media, and supported non-profit projects in the local community.</p>
+        <a class="btn" href="portfolio-projects/.html">Read more</a>
+      </div>
 
-    <section id="project2">
-      <h2>Project 2</h2>
-      <p>Description of project 2.</p>
-    </section>
- <br>
-    <section id="project3">
-      <h2>Project 3</h2>
-      <p>Description of project 3.</p>
-    </section>
-     <br>
+      <!-- Project Card 5 -->
+      <div class="project-card">
+        <h2>Translation</h2>
+        <h4>Freelance</h4>
+        <h3>Copywriting in Swedish/English</h3>
+        <a class="btn" href="portfolio-projects/.html">Read more</a>
+      </div>
+
+      <!-- Project Card 6 -->
+      <div class="project-card">
+        <h2>Web design</h2>
+        <h4>Personal project</h4>
+        <h3>I coded this website!</h3>
+        <p> Designed and developed this portfolio website with HTML, CSS & Javascript using VSCode and GitHub.</p>
+      </div>
+      
+      
+    </div>
+  </section>
   </main>
 
   <footer>
