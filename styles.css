@@ -1,14 +1,20 @@
 /* GRAPHIC PROFILE
-background: #f9f9f9;
+LIGHT GREY background: #f9f9f9;
 
-LIGHT BLUE
+LIGHT BLUE buttons
 color: #A3C6F5;
 
-DEEP PURPLE
+DEEP PURPLE hover
 color: #4F377B;
 
-LIGHT PINK
+LIGHT PINK details
 color: #FFE5F8; 
+
+LIGHT GREEN details
+color: #caccb3;
+
+LIGHT YELLOW details
+color: #fff5ac;
 
 HEADINGS : Lucida Sans Unicode
 SUBHEADINGS: Lucida Sans Unicode
@@ -113,7 +119,7 @@ nav {
 .brand-logo {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #4F377B;
   text-decoration: none;
   margin-right: 2.5rem;
@@ -215,6 +221,20 @@ nav ul li a:hover {
   text-align: center;
 }
 
+body.home-page main * {
+  text-align: center !important;
+}
+
+body.home-page main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.home-page .btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* PORTFOLIO */
@@ -257,11 +277,12 @@ nav ul li a:hover {
 }
 .about-image {
   flex: 1;
-  height: 350px;
+  height: 800px;
   display: flex;
   justify-content: center;
-  margin-left: -100px;
-  margin-right: -200px;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: -20px;
 }
 
 
@@ -289,14 +310,14 @@ nav ul li a:hover {
 }
 
 .tools-box {
-  background: rgb(255, 229, 248); /* light pink */
+  background: rgb(255, 229, 248);
   border-radius: 18px;
   padding: 1.5rem 1.2rem;
   box-shadow: 0 2px 8px rgba(163,198,245,0.08);
 }
 
 .love-box {
-  background: rgb(79, 55, 123); /* deep purple */
+  background: rgb(79, 55, 123); 
   border-radius: 18px;
   padding: 1.5rem 1.2rem;
   color: #fff;
