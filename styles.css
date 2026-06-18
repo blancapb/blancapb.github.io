@@ -19,6 +19,7 @@ color: #fff5ac;
 HEADINGS : Lucida Sans Unicode
 SUBHEADINGS: Lucida Sans Unicode
 BODY: Gill Sans
+  new: Helvetica, Arial, sans-serif ?
 
 Rounded edges: 8, 10 or 25px
 
@@ -27,7 +28,7 @@ Rounded edges: 8, 10 or 25px
 /* GENERAL  */
 
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Helvetica', 'Arial', 'sans-serif';
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -103,6 +104,8 @@ html {
 .btn:hover {
   background-color: #5a9cd8;
 }
+
+
 
 
 /* NAVIGATION */
