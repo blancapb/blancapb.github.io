@@ -28,6 +28,7 @@ Rounded edges: 8, 10 or 25px
 /* GENERAL  */
 
 body {
+  
   font-family:'Helvetica', 'Arial', 'sans-serif';
   margin: 0;
   padding: 0;
@@ -40,21 +41,20 @@ body {
 h1 {
   font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.5rem;
+  padding-right: 2rem;
   letter-spacing: 1px;
   font-weight: 700;
+  text-align: right;
 }
 
 p {
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
 }
 
 main {
-  padding: 2rem 1.5rem;
-  padding-top: 0; 
-  max-width: 1100px;
-  margin: 0 auto;
-  box-sizing: border-box;
+   margin-left: 280px;
 }
 
 footer {
@@ -62,32 +62,23 @@ footer {
   padding: 1rem;
   color: darkgrey;
   border-top: 1px solid #ccc;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: 250px;
+  box-sizing: border-box;
 }
 
 footer p {
   margin: 0;
-  vertical-align: middle;
+  padding-left: 12px;
+  text-align: right;
 }
 
-footer a {
-  display: flex;
-  align-items: center;
-  margin-right: 12px; /* space to the right edge */
-}
-
-footer a img {
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-  margin-left: 0;
-}
 
 html {
   overflow-y: scroll;
 }
+
+
 
 /* BUTTONS */
 .btn {
@@ -106,66 +97,69 @@ html {
 }
 
 
-
-
 /* NAVIGATION */
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   background: #fff;
-  padding: 1rem;
-  border-bottom: 1px solid #ccc;
-  margin: 0;
-  justify-content: space-between;
-  position: relative;
+  padding: 2rem 1rem;
+  border-right: 1px solid #ccc;
+  background: #fff;
+  z-index: 200;
+  justify-content: flex-start;
 }
 
 .brand-logo {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #4F377B;
   text-decoration: none;
-  margin-right: 2.5rem;
-  display: inline-block;
-  vertical-align: middle;
-  flex-shrink: 0;
+  text-align: left;
 }
 
-#say-hi {
-  display: inline-block;
-  background-color: #A3C6F5;
-  border: none;
-  color: white;
+.title-logo {
+  color: #4F377B;
+  font-size: 0.9rem;
   text-decoration: none;
+}
+
+  #say-hi {
+  border: none;
+  color: rgb(75, 179, 243);
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 #say-hi:hover {
-  background-color: #4F377B;
+  background-color: #42a8e4;
   color: #fff;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  position: static;
-  background: none;
-  box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #000;
-  border-bottom: none;
+  width: 100%;
+   display: block;
+    padding: 0.25rem 0;
+    color: #000;
+    text-align: left;
 }
 
 nav ul li a.active {
@@ -174,11 +168,19 @@ nav ul li a.active {
   text-decoration: none; 
 }
 
+det funkar inteeee
+nav ul li a img:hover{
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
 nav ul li a:hover {
   border-bottom: 1.5px solid #4F377B;
   padding-bottom: 2px;
   text-decoration: none;
 }
+
+
 
 
 /* Responsive Navigation */
@@ -220,53 +222,106 @@ nav ul li a:hover {
 
 
 
+/* HOME & ABOUT ME */
 
-/* HOME */
 
-.home-section {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  padding: 3.5rem 0 2.5rem 0;
+/* About Top Flex */
+.about-top-flex {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.about-info {
+  flex: 1;
+  margin: 60px 200px 30px 170px;
+  justify-content: left;
+}
+.about-image {
+  flex: 1;
+  height: 700px;
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;;
+  margin-right: -300px;
+}
+
+
+/* About Boxes */
+.about-columns-flex {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.about-col {
+  flex: 1;
+  min-width: 220px;
+}
+.about-col h2 {
+  color: #4F377B;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.about-col ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.tools-box {
+  background: rgb(255, 229, 248);
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
+}
+
+.tools-box h2 {
+  color: #4F377B;
   text-align: center;
 }
 
-.home-section-1 {
-  background: #FFE5F8; /* light pink */
+.tools-box p {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.home-section-2 {
-  background: #f9f9f9;; /* light yellow */
+.love-box {
+  background: rgb(79, 55, 123); 
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem;
+  margin-right: 30px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
 }
 
-.home-section-3 {
-  background: #A3C6F5; /* light blue */
-}
-
-.home-section h1,
-.home-section h2,
-.home-section p,
-.home-section a.btn {
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-}
-
-.home-section .btn {
-  margin-bottom: 0;
-}
-
-body.home-page main {
+.love-box h2 {
+  color: #fff;
   text-align: center;
-  padding-bottom: 0 !important;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-body.home-page .btn {
-  display: inline-block;
+.love-box p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Work Philosophy */
+.about-philosophy {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.about-philosophy h2 {
+  color: #4F377B;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.about-philosophy p {
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
+
 
 
 /* PORTFOLIO */
@@ -381,112 +436,6 @@ body.portfolio-page main {
 }
 
 
-
-
-/* ABOUT ME */
-
-body.about-page main {
-  padding-top: 20px;
-}
-
-/* About Top Flex */
-.about-top-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-.about-info {
-  flex: 1;
-  min-width: 500px;
-}
-.about-image {
-  flex: 1;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-  margin-left: -50px;
-  margin-right: -50px;
-  margin-top: -20px;
-}
-
-
-
-
-/* About Boxes */
-.about-columns-flex {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-.about-col {
-  flex: 1;
-  min-width: 220px;
-}
-.about-col h2 {
-  color: #4F377B;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-}
-.about-col ul {
-  list-style: disc inside;
-  padding-left: 0;
-}
-
-.tools-box {
-  background: rgb(255, 229, 248);
-  border-radius: 18px;
-  padding: 1.5rem 1.2rem;
-  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
-}
-
-.tools-box h2 {
-  color: #4F377B;
-  text-align: center;
-}
-
-.tools-box p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.love-box {
-  background: rgb(79, 55, 123); 
-  border-radius: 18px;
-  padding: 1.5rem 1.2rem;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
-}
-
-.love-box h2 {
-  color: #fff;
-  text-align: center;
-}
-
-.love-box p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* Work Philosophy */
-.about-philosophy {
-  margin-bottom: 40px;
-  text-align: center;
-}
-.about-philosophy h2 {
-  color: #4F377B;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-  text-align: center;
-}
-.about-philosophy p {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
 
 /* CONTACT */
