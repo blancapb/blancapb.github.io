@@ -249,6 +249,25 @@ nav ul li a img {
   color: #529edb;
 }
 
+.window {
+  position: absolute;
+  display: none;
+  max-width: 300px;
+  z-index: 300;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  cursor: default;
+}
+
+.window.visible {
+  display: block;
+}
+
+
+.window-body {
+  cursor: default;
+}
+
+
 #sayhi {
   text-decoration: none;
   color: #529edb;
@@ -335,39 +354,19 @@ nav ul li a img {
   margin-right: 20px;
 }
 
-/* Work Philosophy */
-.about-philosophy {
-  margin-bottom: 40px;
-  text-align: center;
-}
-.about-philosophy h2 {
-  color: #4F377B;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-  text-align: center;
-}
-.about-philosophy p {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
 
-
-/* PORTFOLIO */
+/* SOCIAL MEDIA */
 
 body.portfolio-page main {
   padding-top: 20px;
 }
 
-/* Center text in portfolio-intro */
 #portfolio-intro {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
-/* Portfolio grid layout */
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
@@ -375,7 +374,7 @@ body.portfolio-page main {
   justify-content: center;
 }
 
-/* Project card styles */
+
 .project-card {
   background: #fff;
   border-radius: 16px;
@@ -433,7 +432,7 @@ body.portfolio-page main {
   background: #e6eaf3;
 }
 
-/* Responsive: stack cards in one column on mobile */
+/* cards into one column on mobile */
 @media (max-width: 700px) {
   .portfolio-grid {
     flex-direction: column;
@@ -492,7 +491,6 @@ body.portfolio-page main {
   margin-bottom: 18px;
 }
 
-/* Contact Page Flex Layout */
 .contact-flex {
   display: flex;
   gap: 40px;
