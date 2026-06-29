@@ -29,9 +29,9 @@ Rounded edges: 8, 10 or 25px
 
 body {
   font-family:'Helvetica', 'Arial', 'sans-serif';
-  background: #f9f9f9;
+  background: #fcfcfc;
   color: #222;
-  line-height: 1.6;
+  line-height: 1.5;
   height: 100%;
 }
 
@@ -55,8 +55,12 @@ main {
 }
 
 footer {
+  position: fixed; 
+  left: 220px;
+  right: 0;
+  bottom: 0;
   background: #fff;
-  padding: 15px;
+  padding: 12px;
   color: darkgrey;
   border-top: 1px solid #ccc;
   align-items: center;
@@ -81,18 +85,20 @@ html {
 /* BUTTONS */
 .btn {
   display: inline-block;
-  background-color: #78b3ef;
-  border: none;
-  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+  background-color: #73abe2;
+  border: 1px solid #89a3b9;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 10px 20px;
-  border-radius:8px;
+  border-radius:12px;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #529edb;
 }
+
 
 
 /* NAVIGATION */
@@ -117,7 +123,7 @@ nav {
   font-family: lucida sans unicode, lucida grande, lucida sans, arial, sans-serif;
   color: #529edb;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19px;
   text-decoration: none;
   text-align: left;
 }
@@ -128,16 +134,17 @@ nav {
   font-size: 0.9rem;
   text-decoration: none;
   margin-top: -20px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 
 nav ul li#nav-category a {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
+  line-height: 2;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -157,7 +164,7 @@ nav ul li#nav-category a:focus {
 
 nav ul li#nav-action a {
   color: #529edb;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -244,37 +251,10 @@ nav ul li a img {
 
 /* HOME & ABOUT ME */
 
-#internship {
-  text-decoration: none;
-  color: #529edb;
-}
-
-.window {
-  position: absolute;
-  display: none;
-  max-width: 300px;
-  z-index: 300;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-  cursor: default;
-}
-
-.window.visible {
-  display: block;
-}
-
-
-.window-body {
-  cursor: default;
-}
-
-
 #sayhi {
-  text-decoration: none;
   color: #529edb;
+  text-decoration: none;
 }
-
-
-
 
 /* About Top Flex */
 .about-top-flex {
@@ -285,7 +265,7 @@ nav ul li a img {
 }
 .about-info {
   flex: 1;
-  margin: 50px 290px 30px 0px;
+  margin: 20px 290px 0px 0px;
   justify-content: left;
 }
 .about-image {
@@ -297,73 +277,12 @@ nav ul li a img {
 }
 
 
-/* About Boxes */
-.about-columns-flex {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-.about-col {
-  flex: 1;
-  min-width: 220px;
-}
-.about-col h2 {
-  color: #4F377B;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-}
-.about-col ul {
-  list-style: disc inside;
-  padding-left: 0;
-}
 
-.tools-box {
-  background: rgb(255, 229, 248);
-  border-radius: 18px;
-  padding: 1.5rem 1.2rem;
-  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
-}
+/* PORTFOLIO social media & community tabs */
 
-.tools-box h2 {
-  color: #4F377B;
-  text-align: center;
-}
-
-.tools-box p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.love-box {
-  background: rgb(79, 55, 123); 
-  border-radius: 18px;
-  padding: 1.5rem 1.2rem;
+#portfolio-intro p {
+  text-align: right;
   margin-right: 30px;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(163,198,245,0.08);
-}
-
-.love-box h2 {
-  color: #fff;
-  text-align: center;
-}
-
-.love-box p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-
-
-/* SOCIAL MEDIA */
-
-body.portfolio-page main {
-  padding-top: 20px;
-}
-
-#portfolio-intro {
-  text-align: center;
   margin-bottom: 2.5rem;
 }
 
@@ -373,7 +292,6 @@ body.portfolio-page main {
   gap: 2.5rem;
   justify-content: center;
 }
-
 
 .project-card {
   background: #fff;
@@ -450,52 +368,22 @@ body.portfolio-page main {
 
 /* CONTACT */
 
-
-.contact-header {
-  width: 100vw;
-  min-height: 120px;
+.contact-flex {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: #A3C6F5;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-bottom: 2vw;
-  margin-top: 0;
-  border-radius: 0;
-  z-index: 0;
-}
-
-.contact-header h1 {
-  color: #fff;
-  text-align: center;
-  z-index: 2;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.25);
-  padding: 0 20px;
-}
-
-.contact-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 0;
-  z-index: 1;
 }
 
 #contact-img {
   width: 150px;
-  margin-top: 0px;
-  margin-bottom: 18px;
+  margin-top: 5%;
+  margin-bottom: 10px;
 }
 
-.contact-flex {
-  display: flex;
+.contact-flex p {
   gap: 40px;
   align-items: flex-start;
   justify-content: center;
+  text-align: center;
 }
 
 #get-in-touch {
@@ -510,20 +398,19 @@ body.portfolio-page main {
 }
 
 #get-in-touch .btn {
-  width: 250px;
+  width: 210px;
   text-align: center;
   margin-bottom: 10px;
 }
 
 #get-in-touch .btn[href^="mailto:"] {
-  width: 350px;
+  width: 100px;
   text-align: center;
-  justify-content: center;
 }
 
 .social-logo {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 15px;
   vertical-align: middle;
 }
