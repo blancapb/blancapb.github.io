@@ -290,7 +290,7 @@ nav ul li a img {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 3rem;
 }
 
@@ -301,6 +301,7 @@ nav ul li a img {
   padding: 1rem 1rem 1rem 1rem;
   max-width: 340px;
   min-width: 260px;
+  max-height: 450px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -349,6 +350,80 @@ nav ul li a img {
   background: #e6eaf3;
 }
 
+
+/* Mini cards */
+
+.portfolio-grid-mini {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.portfolio-grid-mini-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.project-card-mini {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(163,198,245,0.13);
+  padding: 1rem 1rem 1rem 1rem;
+  max-width: 340px;
+  min-width: 260px;
+  max-height: 90px;
+  min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+
+.project-card-mini:hover {
+  box-shadow: 0 8px 25px rgba(79,55,123,0.18);
+}
+
+.project-img-mini {
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #e6eaf3;
+}
+
+.project-card-mini p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+  text-align: right;
+}
+
+.mini-info a {
+  font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;  
+  margin: 0.3rem 0 0.3rem 0;
+  color: #131313;
+  text-decoration: none;
+}
+
+.project-card-mini h3 {
+  font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  margin: 0.3rem 0 0.3rem 0;
+  color: #131313;
+  text-align: right;
+  text-decoration: none;
+}
 
 
 /* cards into one column on mobile */
