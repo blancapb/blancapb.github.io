@@ -255,6 +255,11 @@ nav ul li a img {
   text-decoration: none;
 }
 
+#myportfolio {
+  color: #529edb;
+  text-decoration: none;
+}
+
 /* About Top Flex */
 .about-top-flex {
   display: flex;
