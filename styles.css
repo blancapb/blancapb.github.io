@@ -306,7 +306,7 @@ nav ul li a img {
   padding: 1rem 1rem 1rem 1rem;
   max-width: 340px;
   min-width: 260px;
-  max-height: 450px;
+  max-height: 415px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -329,7 +329,7 @@ nav ul li a img {
 .project-card h4 {
   font-family: monospace;
   font-size: 1rem;
-  margin: 0 0 0.7rem 0;
+  margin: 0 0 0 0;
   color: #78b3ef;
   text-align: left;
 }
