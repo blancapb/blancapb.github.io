@@ -29,7 +29,7 @@ Rounded edges: 8, 10 or 25px
 
 body {
   font-family:'Helvetica', 'Arial', 'sans-serif';
-  background: #fcfcfc;
+  background: #ffffff;
   color: #222;
   line-height: 1.5;
   height: 100%;
@@ -90,12 +90,12 @@ html {
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 8px;
-  border-radius: 3px;
+  border-radius: 0px;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #529edb;
+  background-color: #4d4d4d;
 }
 
 
@@ -112,7 +112,7 @@ nav {
   align-items: flex-start;
   background: #fff;
   padding: 3.5rem 30px;
-  border-right: 1px solid #ccc;
+  border-right: 0px solid #ccc;
   background: #fff;
   z-index: 200;
   justify-content: flex-start;
@@ -301,10 +301,10 @@ nav ul li a img {
 
 .project-card {
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(163,198,245,0.13);
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(71, 84, 101, 0.244);
   padding: 1rem 1rem 1rem 1rem;
-  max-width: 340px;
+  max-width: 330px;
   min-width: 260px;
   max-height: 415px;
   display: flex;
@@ -321,16 +321,8 @@ nav ul li a img {
 .project-card h2 {
   font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.35rem;
-  margin: 1rem 0 0.3rem 0;
+  margin: 1rem 0 0 0;
   color: #131313;
-  text-align: left;
-}
-
-.project-card h4 {
-  font-family: monospace;
-  font-size: 1rem;
-  margin: 0 0 0 0;
-  color: #78b3ef;
   text-align: left;
 }
 
@@ -351,8 +343,9 @@ nav ul li a img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0px;
   background: #e6eaf3;
+  align-self: center;
 }
 
 
@@ -376,8 +369,8 @@ nav ul li a img {
 
 .project-card-mini {
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(163,198,245,0.13);
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(71, 84, 101, 0.244);
   padding: 1rem 1rem 1rem 1rem;
   max-width: 340px;
   min-width: 260px;
@@ -398,7 +391,7 @@ nav ul li a img {
   width: 60px;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0px;
   background: #e6eaf3;
 }
 
