@@ -59,7 +59,7 @@ footer {
   left: 220px;
   right: 0;
   bottom: 0;
-  background: #fcfcfc;
+  background: #ffffff;
   padding: 12px;
   color: rgb(177, 177, 177);
   align-items: center;
@@ -288,7 +288,13 @@ nav ul li a img {
 #portfolio-intro p {
   text-align: right;
   margin-right: 30px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#portfolio-intro h2 {
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 1rem;
 }
 
 .portfolio-grid {
