@@ -200,13 +200,31 @@ nav ul li:last-child {
   margin: 0;
 }
 
-nav ul li:last-child {
-  margin-left: 10px;
+nav ul li.social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a img {
-  display: block;
+nav ul li.social-links .nav-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
+
+nav ul li.social-links .nav-social-link:first-child {
+  order: 1;
+}
+
+nav ul li.social-links .nav-social-link:last-child {
+  order: 2;
+  margin-left: 0;
+}
+
 
 
 /* Responsive Navigation */
@@ -498,110 +516,6 @@ nav ul li a img {
 
 
 
-/* RESPONSIVITY */
-@media (max-width: 700px) {
-
-  /* NAVIGATION */
-  nav {
-    flex-wrap: wrap;
-  }
-  .nav-toggle {
-    display: block;
-  }
-  nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #fff;
-    width: 180px;
-    box-shadow: 0 2px 8px rgba(163,198,245,0.10);
-    padding: 1rem 0;
-    margin: 0;
-    gap: 0;
-    display: none;
-    z-index: 100;
-  }
-  nav ul.open {
-    display: flex;
-  }
-  nav ul li {
-    width: 100%;
-    text-align: right;
-    padding: 0.7em 1.5em;
-  }
-
-  .brand-logo {
-    font-size: smaller;
-  }
-
-
-  #profile-bio {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .bio p {
-    max-width: 100%;
-  }
-
-  #contact-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .contact-flex {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  #get-in-touch, #contact-form {
-    max-width: 100%;
-  }
-
-  .name-row  {
-    flex-direction: column;
-    gap: 2;
-  }
-}
-
-
-/* HOME */
-
-@media (max-width: 700px) {
-  .home-section {
-    padding: 2.2rem 0 1.5rem 0;
-  }
-}
-
-
-/* About me */
-@media (max-width: 700px) {
-  .about-top-flex {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .about-image {
-    width: 100%;
-    margin-left: 0;
-  }
-  .about-image img {
-    max-width: 100%;
-  }
-
-  .about-info {
-    min-width: 100%;
-    text-align: center;
-  }
-}
-
-
-
-/* Portfolio */
-@media (max-width: 700px) {
-
-}
-
-
-/* ...existing code... */
 
 @media (max-width: 900px) {
   body {
@@ -616,23 +530,40 @@ nav ul li a img {
     height: 72px;
     box-sizing: border-box;
     padding: 1rem 1.25rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     z-index: 200;
   }
 
   .brand-logo {
+    display: block;
     font-size: 1rem;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    transform: translateY(10px);
   }
 
-  .title-logo {
-    display: none;
+   .title-logo {
+    display: block;
+    font-size: 0.68rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    transform: translateY(-5px);
   }
 
   .nav-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
     display: block;
-    margin-left: auto;
+    margin-left: 0;
+    z-index: 10;
   }
 
   nav ul {
@@ -662,19 +593,38 @@ nav ul li a img {
     text-align: left;
   }
 
-  nav ul li:nth-last-child(2),
-  nav ul li:last-child {
-    display: inline-flex;
+  nav ul li#nav-category,
+  nav ul li#nav-action {
+    width: 100%;
+  }
+
+  nav ul li.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
     width: auto;
-    padding: 0.5rem 0.75rem 0.5rem 0;
+    margin: 0;
+    padding: 0.5rem 0 0 0;
   }
 
-  nav ul li:last-child {
-    margin-left: 0;
+  .nav-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
   }
 
-  nav ul li a {
-    display: inline-block;
+  .nav-social-link img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
   }
 
   main {
@@ -684,6 +634,12 @@ nav ul li a img {
 
   footer {
     left: 0;
+  }
+
+  p {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   .nav-toggle[aria-expanded="true"] .hamburger {

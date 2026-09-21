@@ -1,5 +1,3 @@
-/* Hamburger Navigation */
-
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('#main-navigation');
