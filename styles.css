@@ -55,7 +55,6 @@ main {
 }
 
 footer {
-  position: fixed; 
   left: 220px;
   right: 0;
   bottom: 0;
@@ -301,19 +300,156 @@ nav ul li.social-links .nav-social-link:last-child {
 
 
 
-/* PORTFOLIO social media & community tabs */
+/* PORTFOLIO pieces */
 
-#portfolio-intro p {
+.back-link {
+  display: inline-block;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  color: #888;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back-link:hover {
+  color: #727272;
+}
+
+#portfolio-intro-all p {
   text-align: right;
-  margin-right: 30px;
-  margin-bottom: 1rem;
+  padding-right: 30px;
+  margin: 0.2rem;
+}
+
+#portfolio-intro-all h1 {
+  text-align: right;
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+#portfolio-intro {
+  margin-top: 0;
+}
+
+#portfolio-intro h1 {
+  margin: 0 0 0.25rem 0;
 }
 
 #portfolio-intro h2 {
+  margin: 0 0 0.4rem 0;
   text-align: right;
   margin-right: 30px;
-  margin-bottom: 1rem;
 }
+
+#portfolio-intro p {
+  text-align: right;
+  padding-right: 30px;
+  margin: 0.2rem;
+}
+
+@media (min-width: 901px) {
+  #portfolio-intro {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+
+  #portfolio-intro > div:first-child {
+    width: 350px;
+  }
+
+  #portfolio-intro > div:first-child > img {
+    display: block;
+    width: 300px;
+    height: auto;
+    float: none;
+  }
+
+  #portfolio-intro > div:first-child > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  #portfolio-intro > div:last-child {
+    min-width: 0;
+    text-align: right;
+  }
+
+  #portfolio-intro > div:last-child h1,
+  #portfolio-intro > div:last-child h2,
+  #portfolio-intro > div:last-child p {
+    text-align: right;
+  }
+}
+
+
+
+
+.process-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.process-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.process-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.process-copy,
+.process-media {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.process-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.process-copy p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.process-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-image {
+  width: 100%;
+  min-height: 220px;
+  background: #f3f3f3;
+  border: 1px solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+/* Portfolio All */
+
 
 .portfolio-grid {
   display: flex;
@@ -321,6 +457,7 @@ nav ul li.social-links .nav-social-link:last-child {
   gap: 1.5rem;
   justify-content: left;
   margin-bottom: 3rem;
+  margin-top: 1.5rem;
 }
 
 .project-card {
@@ -446,6 +583,9 @@ nav ul li.social-links .nav-social-link:last-child {
   text-align: right;
   text-decoration: none;
 }
+
+
+
 
 
 /* cards into one column on mobile */
@@ -653,4 +793,47 @@ nav ul li.social-links .nav-social-link:last-child {
   .nav-toggle[aria-expanded="true"] .hamburger::after {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+
+  #portfolio-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  #portfolio-intro > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #portfolio-intro > div:first-child > img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  #portfolio-intro > div:first-child > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  #portfolio-intro > div:last-child {
+    width: 100%;
+    text-align: right;
+  }
+
+  #portfolio-intro > div:last-child h1,
+  #portfolio-intro > div:last-child h2,
+  #portfolio-intro > div:last-child p {
+    text-align: right;
+  }
+
 }
