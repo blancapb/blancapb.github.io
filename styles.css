@@ -38,7 +38,6 @@ body {
 h1 {
   font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.5rem;
-  padding-right: 2rem;
   letter-spacing: 1px;
   font-weight: 700;
   text-align: right;
@@ -336,6 +335,7 @@ nav ul li.social-links .nav-social-link:last-child {
 
 #portfolio-intro h1 {
   margin: 0 0 0.25rem 0;
+  padding-right: 2rem;
 }
 
 #portfolio-intro h2 {
@@ -638,6 +638,11 @@ nav ul li.social-links .nav-social-link:last-child {
     padding-top: 72px;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   nav {
     position: fixed;
     top: 0;
@@ -769,6 +774,50 @@ nav ul li.social-links .nav-social-link:last-child {
   .nav-toggle[aria-expanded="true"] .hamburger::after {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+
+
+  #about-main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-top-flex {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about-info {
+    flex: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .about-info p {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
 
 
   #portfolio-intro {
